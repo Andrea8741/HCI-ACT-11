@@ -1,0 +1,229 @@
+/* ESTILOS GENERALES */
+body.light {
+  box-sizing: border-box;
+  background-color: #8eceec78;
+  color: #1a1a1a;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 10px;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+}
+
+header, footer {
+  padding: 1rem 2rem;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* ESTRUCTURA */
+header, footer {
+  padding: 5px 0;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+
+main {
+  max-width: 7000px;
+  margin: auto;
+}
+
+/* NAVEGACIÓN */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* BOTONES */
+.btn {
+  background-color: #005fcc;
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-large {
+  background: linear-gradient(135deg, #005fcc, #004bb5);
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: #004bb5;
+}
+
+.btn:focus {
+  outline: 3px solid #ff9800;
+}
+
+/* ENLACES */
+a {
+  color: #005fcc;
+}
+
+a:focus, button:focus, input:focus {
+  outline: 3px solid #ff9800;
+  outline-offset: 2px;
+}
+
+/* FORMULARIOS */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: 3px solid #ffbf47;
+}
+
+/* MENSAJES DE ERROR */
+.error {
+  color: red;
+}
+
+/* LISTA ACCESIBLE */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f0f0f0;
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 0.7rem;
+}
+
+body.dark li {
+  background: #2a2a2a;
+}
+
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+body.dark .card {
+  background-color: #1e1e1e;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 760px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+.hero-card {
+  background: #ffffff;
+  padding: 3rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  max-width: 650px;
+}
+
+body.dark .hero-card {
+  background: #1e1e1e;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-large {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+}
+body.light .hero {
+  background: linear-gradient(135deg, #e1f5fe, #fdfefe);
+}
+
+body.dark .hero {
+  background: linear-gradient(135deg, #1a237e, #121212);
+}
+
+body.dark header {
+  background-color: #1e1e1e;
+}
+
+:focus {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+}
